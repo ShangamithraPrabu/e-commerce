@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NyntraMart - Indian Shopping</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+        <span class="nyntra">Nyntra</span><span class="mart">Mart</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="pages/men.html">Men</a>
+        <a href="pages/women.html">Women</a>
+        <a href="pages/products.html">All Products</a>
+        <a href="pages/about.html">About</a>
+    </nav>
+
+    <div class="header-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <i class="search-icon">&#128269;</i>
+        </div>
+
+        <div class="icons">
+            <div class="icon">
+                ❤️ <span class="count">0</span>
+            </div>
+            <div class="icon">
+                🛒 <span class="count">0</span>
+            </div>
+        </div>
+
+        <a class="login-btn" href="pages/login.html">Login</a>
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="home-slider">
+
+        <!-- Left Card -->
+        <div class="side-card left-card">
+            <img src="images/slide5.jpg.jpeg" alt="Slide 5">
+            <div class="card-text">
+              <button class="shop-btn" onclick="window.location='pages/products.html?cat=women'">Shop Now</button>
+                <p>Buy 1 Get 1 Free on Western Kurtas</p>
+            </div>
+        </div>
+
+        <!-- Main Slider -->
+        <div class="main-slider">
+            <div class="slider-track">
+
+                <div class="slide active">
+                    <img src="images/slide2.jpg.jpeg" alt="Silk Sarees Offer">
+                    <div class="slide-text">
+                        <h2>Festive Offers </h2>
+                        <button class="shop-btn" onclick="window.location='pages/products.html'">Shop Now</button>
+                      </div>
+                    </div>
+
+                    <div class="slide">
+                      <img src="images/slide3.jpg.jpeg" alt="Accessories Offer">
+                      <div class="slide-text">
+                        <h2>New Accessories Collection</h2>
+                        <button class="shop-btn" onclick="window.location='pages/products.html'">Shop Now</button>
+                      </div>
+                    </div>
+
+                    <div class="slide">
+                      <img src="images/slide.jpg.jpeg" alt="Men's Fashion Offers">
+                    <div class="slide-text">
+                        <h2>Exclusive Men's Offers</h2>
+                        <button class="shop-btn" onclick="window.location='pages/products.html?cat=men'">Shop Now</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dots -->
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="side-card right-card">
+            <img src="images/slide4.jpg.jpeg" alt="Slide 4">
+            <div class="card-text">
+              <button class="shop-btn" onclick="window.location='pages/products.html?cat=women'">Shop Now</button>
+
+                <p>30% Off Bridal Lehengas</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+     
+
+  <!-- Trending Products Section -->
+  <main class="container main-content">
+    <section>
+      <h2>Trending Products</h2>
+
+      <!-- PRODUCT GRID IMAGES NOW WORK (handled in products.js) -->
+      <div id="trendingGrid" class="product-grid"></div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers">
+      <h2>Special Offers</h2>
+      <div class="offers-grid">
+        <div class="offer-card">Flat 30% off on selected brands</div>
+        <div class="offer-card">Buy 2 Get 1 on accessories</div>
+        <div class="offer-card">Free shipping on orders above ₹999</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="container footer-grid">
+      <div>
+        <h3>About NyntraMart</h3>
+        <p>Your favorite Indian shopping destination for ethnic and modern wear, accessories, and more.</p>
+      </div>
+      <div>
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="pages/customercare.html">Help & FAQs</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <p>Instagram • Facebook • X</p>
+      </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> NyntraMart — Made in India</div>
+</footer>
+
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

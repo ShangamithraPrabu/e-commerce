@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - NyntraMart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <main class="container auth-page">
+    <div class="auth-card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input name="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('This is front-end only. Implement authentication on the backend to make real login.');
+      window.location = 'index.html';
+    });
+  </script>
+</body>
+</html>

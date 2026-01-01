@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products - NyntraMart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Reuse same header markup - simplified for brevity -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="../index.html">Nyntra<span>Mart</span></a></div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input id="searchInputProducts" type="search" placeholder="Search products..." />
+        <a class="icon" href="wishlist.html">♡ <span id="wishCount2" class="badge">0</span></a>
+        <a class="icon" href="cart.html">🛒 <span id="cartCount2" class="badge">0</span></a>
+        <a class="btn login-btn" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>All Products</h1>
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="shoes">Shoes</option>
+        <option value="accessories">Accessories</option>
+        <option value="watches">Watches</option>
+      </select>
+      <select id="sortBy">
+        <option value="">Sort by</option>
+        <option value="price-asc">Price - Low to High</option>
+        <option value="price-desc">Price - High to Low</option>
+      </select>
+    </div>
+
+    <div id="productsGrid" class="product-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year2"></span> AgriMart</div>
+  </footer>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

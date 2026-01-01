@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customer Care - NyntraMart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <main class="container main-content">
+    <h1>Customer Care</h1>
+    <section class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <ul>
+        <li>How do I return an item? - You can initiate returns within 7 days (example).</li>
+        <li>When will I get my refund? - Refunds process within 7–10 business days.</li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h3>Contact Support</h3>
+      <form id="supportForm">
+        <input name="name" placeholder="Name" required />
+        <input name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('supportForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Support request submitted (front-end demo).');
+    });
+  </script>
+</body>
+</html>

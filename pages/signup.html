@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup - NyntraMart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <main class="container auth-page">
+    <div class="auth-card">
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <input name="name" placeholder="Full name" required />
+        <input name="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <button class="btn" type="submit">Sign up</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Signup saved locally in front-end (no backend).');
+      window.location = 'login.html';
+    });
+  </script>
+</body>
+</html>
